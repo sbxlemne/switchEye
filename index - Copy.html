@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redstore | Ecommerce Website Design</title>
+    <link rel="stylesheet" href="css/products.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="images/logoSE.png" alt="logo" width="200px">
+                </div>
+                <nav>
+                    <ul id="menuItems">
+                        <li><a href="">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li><a href="">Account</a></li>
+                    </ul>
+                </nav>
+                <div class="cart">
+                    <img src="images/cart.png" alt="cart" width="30px" height="30px">
+                    <p class="countitem"></p>
+                 </div>
+                <img src="images/menu.png" class="menu-icon" alt="" onclick="menutoggle()">
+            </div> 
+        </div>
+        <div class="row">
+            <div class="col-2">
+                <h1>Your business<br>Our solution</h1>
+                <p>We provide comprehensive solutions for all types of data centers.</p>
+                <a href="" class="btn">Explore Now &#8594;</a>
+            </div>
+            <div class="col-2 cliPathImg">
+                <img src="images/engineer2.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+<!-- Gallery Catagories -->
+    <div class="catagories">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-3">
+                    <img src="images/cabinet.png" alt="">
+                </div>
+                <div class="col-3">
+                    <img src="images/cabling.png" alt="">
+                </div>
+                <div class="col-3">
+                    <img src="images/cctv.png" alt="">
+                </div>
+            </div> 
+        </div>
+    </div>
+
+<!-- Services -->
+    <div class="small-container">
+        <h2 class="title">Services</h2>
+        <div class="row servicesDiv">
+            <div class="col-4 servicesImg serv1">
+                <img src="images/structureCabling.png" alt=""  id="col-4-sc">
+                <h4>STRUSTURED CABLING</h4>
+
+                <p>Design, installation, maintenance, and optimization of cables like copper, fiber optic, and coaxial for use in data, voice, and video services</p>
+            </div>
+            <div class="col-4 servicesImg serv2">
+                <img src="images/cctvInstall.png" alt="" id="col-4-cctv">
+                <h4>SECURITY SYSTEMS</h4>
+
+                <p>Installation and maintenance services for a full range of Wired, Wireless and IP CCTV Cameras, monitoring and recording solutions</p>
+            </div>
+            <div class="col-4 servicesImg serv3">
+                <img src="images/pabx.png" alt=""  id="col-4-pabx">
+                <h4>PABX PHONE SYSTEM</h4>
+
+                <p>Phone handsets, IP Phones and Digital phones from leading brands including Avaya, Alcatel and Panasonic.</p>
+            </div>
+            <div class="col-4 servicesImg serv4">
+                <img src="images/wireless.png" alt="" id="col-4-wireless">
+                <h4>WIRELESS NETWORK SOLUTION</h4>
+
+                <p>Implementing a fast, effective, and efficient indoor or outdoor wireless networking solution.</p>
+            </div>
+        </div>
+    </div>
+
+<!-------------- Offer ------------->
+    <div class="offer">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-2">
+                    <img src="images/2XS2T47G0-1.png" alt="exclusive" class="offer-img">
+                </div>
+                <div class="col-2">
+                    <p>4 MP Outdoor AcuSense Fixed Dome Network Camera</p>
+                    <h1>DS-2XS2T47G0<br>-LD(W)H/<br>4G/C18S40</h1>
+                    <small>High quality imaging with 4 MP resolution, standalone with solar panel and built-in battery.</small><br>
+                    <a href="product-details.html?id=6" class="btn">Buy Now &#8594;</a>                  
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--------------Brands-------------->
+    <div class="brands">
+        <div class="small-container2">
+            <div class="row">
+                <div class="col-5">
+                    <img src="images/cisco.png" alt="">
+                </div>
+                <div class="col-5">
+                    <img src="images/fujikura.png" alt="">
+                </div>
+                <div class="col-5">
+                    <img src="images/hikvision.png" alt="">
+                </div>
+                <div class="col-5">
+                    <img src="images/huawei2.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--------------Shopping Cart Modal-------------->
+    <div class="productsCart-container hide " id="productsCartContID">
+        <div class="producstOnCart">
+            <div class="top">
+                <h3 class="titleModal">Cart</h3>
+                <p>Total Items: <span></span></p>
+                <span class="close" id="closeButton" >X</span>
+            </div>
+            <ul id="buyItems">
+                <h4 class="empty">Your shopping cart is empty</h4>
+                <!-- <li class="buyItem">
+                </li> -->
+            </ul>
+            <div class="footerModal">
+                <div id="totalPrices">
+                    
+                </div>
+                    <form action="">
+                        <button formaction="checkout.html" class="btn modal checkout hidden">Checkout!</button>
+                    </form>   
+            </div>
+        </div>
+    </div>
+
+        <!--------------Footer-------------->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and ios mobile Phones</p>
+                    <div class="app-logo">
+                        <img src="images/play-store.png" alt="">
+                        <img src="images/app-store.png" alt="">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="images/logoSE.png" alt="" width="200px">
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>instagram</li>
+                        <li>YouTube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copywrite">Copywrite 2022 - Team 7 Kodego</p>
+        </div>
+    </div>
+
+    <script src="js/products.js"></script>
+    <script src="js/cart.js"></script>
+    
+</body>
+</html>
